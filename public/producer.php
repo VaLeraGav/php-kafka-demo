@@ -16,6 +16,6 @@ if (!$producer->getMetadata(false, $topic, 2000)) {
     exit;
 }
 
-$topic->produce(RD_KAFKA_PARTITION_UA, 0, $_SERVER['QUERY_STRING']);
+$topic->produce(RD_KAFKA_PARTITION_UA, 0, "testqweqwe");
 
 echo "Message published\n";
